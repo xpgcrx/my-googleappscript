@@ -11,9 +11,11 @@ function multiColumnSort() {
   // ソートの優先順位 (複数指定可)
   var sortCriteria = [
     { column: 4, ascending: false },  // 優先度1: 4列目 (D列: 完了/不要) を 降順 (false)
-    { column: 6, ascending: true },  // 優先度2: 6列目 (F列: 目標日) を 昇順 (true)
-    { column: 3, ascending: true },  // 優先度3: 3列目 (C列: 案件名) を 昇順 (true)
-    { column: 5, ascending: true }  // 優先度4: 5列目 (E列: 期限) を 昇順 (true)
+    { column: 7, ascending: false },  // 優先度2: 7列目 (G列: 本日取組予定) を 降順 (falue)
+    { column: 8, ascending: true },  // 優先度3: 7列目 (H列: 取組順) を 昇順 (true)
+    { column: 6, ascending: true },  // 優先度4: 6列目 (F列: 目標日) を 昇順 (true)
+    { column: 3, ascending: true },  // 優先度5: 3列目 (C列: 案件名) を 昇順 (true)
+    { column: 5, ascending: true }  // 優先度6: 5列目 (E列: 期限) を 昇順 (true)
   ];
   
   // ヘッダー (見出し行) の行数
